@@ -1,0 +1,33 @@
+#overlay {
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #adb5bd;
+    opacity: 0.5;
+}
+
+#overlay div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.shapeshifter {
+    animation-duration: 800ms;
+    animation-timing-function: steps(60);
+    width: 140px !important;
+    height: 140px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shapeshifter.play {
+    animation-name: play60;
+    animation-iteration-count: infinite;
+}
